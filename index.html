@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Move Your Mass</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0A0A0C; color: #e2e8f0;
+      line-height: 1.7; padding: 40px 20px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { color: #FF4757; font-size: 28px; margin-bottom: 4px; }
+    .subtitle { color: #64748b; font-size: 14px; margin-bottom: 40px; }
+    h2 { color: #f1f5f9; font-size: 20px; margin-top: 36px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px; }
+    h3 { color: #818cf8; font-size: 16px; margin-top: 24px; margin-bottom: 8px; }
+    p { color: #cbd5e1; margin-bottom: 12px; }
+    ul { padding-left: 24px; margin-bottom: 12px; }
+    li { color: #cbd5e1; margin-bottom: 4px; }
+    strong { color: #f1f5f9; }
+    .important { background: rgba(255,71,87,0.08); border: 1px solid rgba(255,71,87,0.2); border-radius: 12px; padding: 16px; margin: 16px 0; }
+    .important strong { color: #FF4757; }
+    .no-access { background: rgba(34,197,94,0.08); border: 1px solid rgba(34,197,94,0.2); border-radius: 12px; padding: 16px; margin: 16px 0; }
+    .no-access strong { color: #22c55e; }
+    a { color: #818cf8; }
+    .lang-switch { display: flex; gap: 12px; margin-bottom: 32px; }
+    .lang-btn { padding: 8px 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.12); background: transparent; color: #64748b; font-weight: 700; cursor: pointer; font-size: 14px; }
+    .lang-btn.active { background: rgba(129,140,248,0.15); border-color: #818cf8; color: #818cf8; }
+    .section { display: none; }
+    .section.active { display: block; }
+    .logo { font-size: 24px; font-weight: 900; letter-spacing: 2px; margin-bottom: 4px; }
+    .logo-m { color: #C04828; }
+    .logo-ass { color: #F5F2EC; }
+    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); color: #4a5568; font-size: 12px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo"><span class="logo-m">M</span><span class="logo-ass">ASS</span></div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Last updated: March 31, 2026</p>
+
+    <div class="lang-switch">
+      <button class="lang-btn active" onclick="switchLang('en')">English</button>
+      <button class="lang-btn" onclick="switchLang('pl')">Polski</button>
+    </div>
+
+    <!-- ═══ ENGLISH ═══ -->
+    <div id="en" class="section active">
+
+      <p>Move Your Mass ("Mass", "the app", "we", "us") is a workout application created by Maciej Gierlik. This Privacy Policy explains what data we collect, how we use it, and what rights you have.</p>
+
+      <h2>1. Data We Collect</h2>
+
+      <h3>Account data</h3>
+      <ul>
+        <li>Email address (registration and login)</li>
+        <li>Name / username</li>
+        <li>Profile photo (optional)</li>
+        <li>Date of birth, gender, body weight (optional)</li>
+      </ul>
+
+      <h3>Workout data</h3>
+      <ul>
+        <li>Workout records (exercises, weight, reps, duration)</li>
+        <li>Workout history and personal records (PRs)</li>
+        <li>Workout photos (optional)</li>
+      </ul>
+
+      <h3>Location data</h3>
+      <ul>
+        <li>GPS location (used solely to find nearby gyms)</li>
+        <li>Location is not stored on our servers — used only at the moment of check-in</li>
+      </ul>
+
+      <h3>Device data</h3>
+      <ul>
+        <li>Push notification token (for sending notifications)</li>
+      </ul>
+
+      <h2>2. How We Use Your Data</h2>
+      <ul>
+        <li><strong>Account and profile</strong> — login, public profile display, XP/level system</li>
+        <li><strong>Workouts</strong> — saving history, calculating statistics, detecting records</li>
+        <li><strong>Location</strong> — finding nearby gyms, GPS check-in</li>
+        <li><strong>Notifications</strong> — informing about friends' activities, beaten records, weekly reports</li>
+      </ul>
+
+      <h2>3. Data Sharing with Gym Owners</h2>
+
+      <div class="important">
+        <p><strong>Important:</strong> If you work out at a gym whose profile is managed by an owner (marked as "Official profile"), the gym owner has access to the following data:</p>
+        <ul>
+          <li>Your name, profile photo, and level</li>
+          <li>Number of your visits to the gym and visit dates</li>
+          <li>Total training volume and time spent at the gym</li>
+          <li>Exercises performed (aggregated statistics)</li>
+          <li>Your position in gym rankings (Wall of Fame)</li>
+        </ul>
+      </div>
+
+      <div class="no-access">
+        <p><strong>The gym owner does NOT have access to:</strong></p>
+        <ul>
+          <li>Your email address</li>
+          <li>Your password</li>
+          <li>Your workouts at other gyms</li>
+          <li>Your exact GPS location</li>
+          <li>Your private workouts (marked as non-public)</li>
+        </ul>
+      </div>
+
+      <p>You can control the visibility of your data in Settings → Profile Sharing.</p>
+
+      <h2>4. Data Storage</h2>
+      <p>Data is stored on Supabase servers (AWS infrastructure, EU region). Local data (preferences, cache) is stored on your device using AsyncStorage and SecureStore.</p>
+
+      <h2>5. Security</h2>
+      <ul>
+        <li>Server communication is encrypted (HTTPS/TLS)</li>
+        <li>Passwords are hashed — we never store them in plain text</li>
+        <li>Session tokens stored in SecureStore (iOS Keychain)</li>
+        <li>Row Level Security (RLS) in the database — each user can only access their own data</li>
+      </ul>
+
+      <h2>6. Your Rights</h2>
+      <ul>
+        <li><strong>Access</strong> — you can view all your data in the app's profile section</li>
+        <li><strong>Correction</strong> — you can edit your data in Settings → Profile</li>
+        <li><strong>Deletion</strong> — you can delete your account in Settings → Account → Delete Account. All your data will be permanently removed</li>
+        <li><strong>Export</strong> — upon request, we can send you a copy of your data (email kontakt@mass-app.com)</li>
+      </ul>
+
+      <h2>7. Cookies and Tracking</h2>
+      <p>The app <strong>does not use</strong> cookies, does not track users across apps, does not display ads, and does not share data with advertising networks.</p>
+
+      <h2>8. Children</h2>
+      <p>The app is intended for persons aged 15 and older. We do not knowingly collect data from persons under 15 years of age.</p>
+
+      <h2>9. Policy Changes</h2>
+      <p>We will notify you of significant changes to this privacy policy via push notification or in-app message.</p>
+
+      <h2>10. Contact</h2>
+      <p>Maciej Gierlik<br>Email: <a href="mailto:kontakt@mass-app.com">kontakt@mass-app.com</a></p>
+    </div>
+
+    <!-- ═══ POLSKI ═══ -->
+    <div id="pl" class="section">
+
+      <p>Move Your Mass ("Mass", "aplikacja", "my", "nas") to aplikacja treningowa stworzona przez Macieja Gierlika. Niniejsza Polityka Prywatności wyjaśnia, jakie dane zbieramy, w jaki sposób je wykorzystujemy i jakie prawa Ci przysługują.</p>
+
+      <h2>1. Jakie dane zbieramy</h2>
+
+      <h3>Dane konta</h3>
+      <ul>
+        <li>Adres email (rejestracja i logowanie)</li>
+        <li>Imię / nazwa użytkownika</li>
+        <li>Zdjęcie profilowe (opcjonalne)</li>
+        <li>Data urodzenia, płeć, masa ciała (opcjonalne)</li>
+      </ul>
+
+      <h3>Dane treningowe</h3>
+      <ul>
+        <li>Rekordy treningów (ćwiczenia, ciężar, powtórzenia, czas)</li>
+        <li>Historia treningów i rekordy osobiste (PR)</li>
+        <li>Zdjęcia treningów (opcjonalne)</li>
+      </ul>
+
+      <h3>Dane lokalizacji</h3>
+      <ul>
+        <li>Lokalizacja GPS (używana wyłącznie do wyszukiwania siłowni w pobliżu)</li>
+        <li>Lokalizacja nie jest przechowywana na naszych serwerach — używana tylko w momencie check-inu</li>
+      </ul>
+
+      <h3>Dane urządzenia</h3>
+      <ul>
+        <li>Token powiadomień push (do wysyłania powiadomień)</li>
+      </ul>
+
+      <h2>2. W jaki sposób wykorzystujemy dane</h2>
+      <ul>
+        <li><strong>Konto i profil</strong> — logowanie, wyświetlanie profilu publicznego, system XP/poziomów</li>
+        <li><strong>Treningi</strong> — zapisywanie historii, obliczanie statystyk, wykrywanie rekordów</li>
+        <li><strong>Lokalizacja</strong> — wyszukiwanie siłowni w pobliżu, check-in GPS</li>
+        <li><strong>Powiadomienia</strong> — informowanie o aktywnościach znajomych, pobitych rekordach, raportach tygodniowych</li>
+      </ul>
+
+      <h2>3. Udostępnianie danych właścicielom siłowni</h2>
+
+      <div class="important">
+        <p><strong>Ważne:</strong> Jeśli trenujesz w siłowni, której profil jest zarządzany przez właściciela (oznaczony jako "Oficjalny profil"), właściciel siłowni ma dostęp do następujących danych:</p>
+        <ul>
+          <li>Twoje imię, zdjęcie profilowe i poziom</li>
+          <li>Liczba Twoich wizyt w siłowni i daty wizyt</li>
+          <li>Łączny wolumen treningowy i czas spędzony w siłowni</li>
+          <li>Wykonywane ćwiczenia (zagregowane statystyki)</li>
+          <li>Twoja pozycja w rankingach siłowni (Wall of Fame)</li>
+        </ul>
+      </div>
+
+      <div class="no-access">
+        <p><strong>Właściciel siłowni NIE ma dostępu do:</strong></p>
+        <ul>
+          <li>Twojego adresu email</li>
+          <li>Twojego hasła</li>
+          <li>Twoich treningów w innych siłowniach</li>
+          <li>Twojej dokładnej lokalizacji GPS</li>
+          <li>Twoich prywatnych treningów (oznaczonych jako niepubliczne)</li>
+        </ul>
+      </div>
+
+      <p>Możesz kontrolować widoczność swoich danych w Ustawienia → Udostępnianie profilu.</p>
+
+      <h2>4. Przechowywanie danych</h2>
+      <p>Dane są przechowywane na serwerach Supabase (infrastruktura AWS, region EU). Dane lokalne (preferencje, cache) przechowywane są na Twoim urządzeniu za pomocą AsyncStorage i SecureStore.</p>
+
+      <h2>5. Bezpieczeństwo</h2>
+      <ul>
+        <li>Komunikacja z serwerem jest szyfrowana (HTTPS/TLS)</li>
+        <li>Hasła są hashowane — nie przechowujemy ich w formie jawnej</li>
+        <li>Tokeny sesji przechowywane w SecureStore (iOS Keychain)</li>
+        <li>Row Level Security (RLS) w bazie danych — każdy użytkownik ma dostęp tylko do swoich danych</li>
+      </ul>
+
+      <h2>6. Twoje prawa</h2>
+      <ul>
+        <li><strong>Dostęp</strong> — możesz zobaczyć wszystkie swoje dane w profilu aplikacji</li>
+        <li><strong>Korekta</strong> — możesz edytować dane w Ustawienia → Profil</li>
+        <li><strong>Usunięcie</strong> — możesz usunąć konto w Ustawienia → Konto → Usuń konto. Wszystkie Twoje dane zostaną trwale usunięte</li>
+        <li><strong>Eksport</strong> — na życzenie możemy przesłać Ci kopię Twoich danych (napisz na kontakt@mass-app.com)</li>
+      </ul>
+
+      <h2>7. Pliki cookie i tracking</h2>
+      <p>Aplikacja <strong>nie używa</strong> plików cookie, nie śledzi użytkowników między aplikacjami, nie wyświetla reklam i nie przekazuje danych do sieci reklamowych.</p>
+
+      <h2>8. Dzieci</h2>
+      <p>Aplikacja jest przeznaczona dla osób w wieku 15 lat i starszych. Nie zbieramy świadomie danych od osób poniżej 15 roku życia.</p>
+
+      <h2>9. Zmiany polityki</h2>
+      <p>O istotnych zmianach w polityce prywatności poinformujemy za pomocą powiadomienia push lub komunikatu w aplikacji.</p>
+
+      <h2>10. Kontakt</h2>
+      <p>Maciej Gierlik<br>Email: <a href="mailto:kontakt@mass-app.com">kontakt@mass-app.com</a></p>
+    </div>
+
+    <div class="footer">
+      © 2026 Maciej Gierlik — Move Your Mass
+    </div>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
